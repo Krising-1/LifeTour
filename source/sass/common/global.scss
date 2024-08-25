@@ -1,0 +1,19 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  box-sizing: border-box;
+  color: $text-primary;
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

@@ -5,27 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lifetour</title>
+    <meta name="description" content="туристическое агентство Lifetour. Организация походов в горы. В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/life-tour-favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicons/life-tour-favicon32.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicons/life-tour-apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="sass/style.scss">
+    <link rel="preload" href="fonts/montserrat-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-extrabold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
-
   <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="header">header</div>
-    <div data-test="hero">hero</div>
-    <div data-test="tours">tours</div>
-    <div data-test="training">training</div>
-    <div data-test="about">about</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="adv">adv</div>
-    <div data-test="gallery">gallery</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
+    <header class="page-body__header header">
+      <div class="header__wrapper main-wrapper">
+        <button class="header__nav-button"><span class="visually-hidden">Открыть или закрыть навигацию.</span></button>
+        <a class="header__logo-link" href="index.html" aria-current="page">
+          <img class="header__logo-image" src="img/life-tour-logo.svg" width="142" height="42" alt="Логотип Туристического агенства Lifetour.">
+        </a>
+        <nav class="header__navigation">
+          <ul class="header__navigation-list">
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#">Туры</a>
+            </li>
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#">Обучение</a>
+            </li>
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#">О нас</a>
+            </li>
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#">Отзывы</a>
+            </li>
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#">Фотографии</a>
+            </li>
+            <li class="header__navigation-item">
+              <a class="header__navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__tel-link" href="tel:+78000000000">8 800 000-00-00</a>
+      </div>
+    </header>
+
+    <main class="page-body__main main">
+
+    </main>
+
+    <footer class="page-body__footer footer">
+
+    </footer>
   </body>
 
 </html>
+
+<!-- пример использования спрайта -->
+<!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+<svg>
+  <use href="/__spritemap#sprite-user"></use>
+</svg> -->
+
+
+<!-- примеры требуемых атрибутов data-test="*" -->
+<!-- <div data-test="header">header</div>
+<div data-test="hero">hero</div>
+<div data-test="tours">tours</div>
+<div data-test="training">training</div>
+<div data-test="about">about</div>
+<div data-test="reviews">reviews</div>
+<div data-test="adv">adv</div>
+<div data-test="gallery">gallery</div>
+<div data-test="form">form</div>
+<div data-test="footer">footer</div>
+<script type="module" src="js/main.js"></script> -->

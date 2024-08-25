@@ -1,0 +1,119 @@
+/* Global Variables */
+$mobile-only-width: 767px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+/* Text-color */
+
+$text-primary: #2d383f;
+$text-white: #ffffff;
+
+/* Button Colors */
+
+$button-primary: #0266c1;
+$button-secondary: #2d383f;
+
+
+/* Background Colors */
+
+$main-background: #0266c1;
+$white-background: #ffffff;
+
+/* Icon Colors */
+
+$icon-primary: #2d383f;
+$icon-secondary: #0266c1;
+$icon-light: #ffffff;
+
+/* Overlays */
+
+$overlay-primary: 113deg, rgba(15, 20, 41, 33%) 20%, rgba(15, 20, 41, 0%) 100%;
+$overlay-secondary: 0deg, rgba(0, 0, 0, 60%) 23%, rgba(0, 0, 0, 0%) 59%;
+$overlay-darker: #2d383f;
+
+/* Desktop Text Style */
+
+$h1-desktop: 800 77px / 77px $primary-font;
+$h2-desktop: 800 55px / 55px $primary-font;
+$h3-desktop: 800 35px / 100% $primary-font;
+$h4-desktop: 700 24px / 28px $primary-font;
+$h5-desktop: 700 21px / 21px $primary-font;
+$h6-desktop: 600 18px / 18px $primary-font;
+$h7-desktop: 700 14px / 16px $primary-font;
+
+// ---------------------------------
+
+$text-big-desktop: 400 17px / 24px $primary-font;
+$text-regular-desktop: 400 16px / 24px $primary-font;
+$text-small-desktop: 400 14px / 22px $primary-font;
+$text-extra-small-desktop: 400 12px / 16px $primary-font;
+
+// ---------------------------------
+
+$captions-big-desktop: 700 13px / 13px $primary-font;
+$captions-medium-desktop: 500 12px / 12px $primary-font;
+$captions-small-desktop: 300 12px / 100% $primary-font;
+
+// ---------------------------------
+
+$button-big-desktop: 700 16px / 15px $primary-font;
+$button-medium-desktop: 500 16px / 16px $primary-font;
+$inputs-desktop: 400 16px / 16px $primary-font;
+
+/* Tablet Text Style */
+
+$h1-tablet: 800 56px / 56px $primary-font;
+$h2-tablet: 800 40px / 40px $primary-font;
+$h3-tablet: 800 25px / 25px $primary-font;
+$h4-tablet: 700 24px / 28px $primary-font;
+$h5-tablet: 700 18px / 18px $primary-font;
+$h6-tablet: 600 16px / 16px $primary-font;
+$h7-tablet: 700 14px / 16px $primary-font;
+
+// ---------------------------------
+
+$text-big-tablet: 400 17px / 24px $primary-font;
+$text-regular-tablet: 400 16px / 24px $primary-font;
+$text-small-tablet: 400 14px / 22px $primary-font;
+$text-extra-small-tablet: 400 12px / 130% $primary-font;
+
+// ---------------------------------
+
+$captions-big-tablet: 700 13px / 13px $primary-font;
+$captions-medium-tablet: 500 12px / 12px $primary-font;
+$captions-small-tablet: 300 12px / 100% $primary-font;
+
+// ---------------------------------
+
+$button-big-tablet: 700 16px / 16px $primary-font;
+$button-medium-tablet: 500 16px / 16px $primary-font;
+$inputs-tablet: 400 14px / 14px $primary-font;
+
+
+/* Mobil Text Style */
+
+$h1-mobile: 800 30px / 30px $primary-font;
+$h2-mobile: 800 26px / 26px $primary-font;
+$h3-mobile: 800 22px / 22px $primary-font;
+$h4-mobile: 700 20px / 24px $primary-font;
+$h5-mobile: 700 16px / 16px $primary-font;
+$h6-mobile: 600 14px / 14px $primary-font;
+$h7-mobile: 700 14px / 16px $primary-font;
+
+// ---------------------------------
+
+$text-big-mobile: 400 15px / 20px $primary-font;
+$text-regular-mobile: 400 14px / 20px $primary-font;
+$text-small-mobile: 400 12px / 18px $primary-font;
+
+// ---------------------------------
+
+$captions-big-mobile: 700 12px / 12px $primary-font;
+$captions-medium-mobile: 500 12px / 12px $primary-font;
+$captions-small-mobile: 300 12px / 12px $primary-font;
+
+// ---------------------------------
+
+$button-big-tablet: 700 14px / 14px $primary-font;
+$button-medium-tablet: 500 16px / 16px $primary-font;
+$inputs-tablet: 400 14px / 14px $primary-font;

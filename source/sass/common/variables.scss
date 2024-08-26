@@ -7,6 +7,9 @@ $desktop-width: 1440px;
 
 $text-primary: #2d383f;
 $text-white: #ffffff;
+$text-secondary: #0266c1;
+$text-active: #1c3374;
+$text-disabled: #999999;
 
 /* Button Colors */
 
@@ -18,6 +21,7 @@ $button-secondary: #2d383f;
 
 $main-background: #0266c1;
 $white-background: #ffffff;
+$line-background: #ffffff;
 
 /* Icon Colors */
 
@@ -114,6 +118,6 @@ $captions-small-mobile: 300 12px / 12px $primary-font;
 
 // ---------------------------------
 
-$button-big-tablet: 700 14px / 14px $primary-font;
-$button-medium-tablet: 500 16px / 16px $primary-font;
-$inputs-tablet: 400 14px / 14px $primary-font;
+$button-big-mobile: 700 14px / 14px $primary-font;
+$button-medium-mobile: 500 16px / 16px $primary-font;
+$inputs-mobile: 400 14px / 14px $primary-font;

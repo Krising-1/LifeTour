@@ -1,3 +1,243 @@
 .header {
   background-color: $main-background;
+  position: relative;
+}
+
+.header--no-js .header__navigation {
+  display: block;
+  position: static;
+  order: 2;
+}
+
+.header--no-js .header__nav-button {
+  display: none;
+}
+
+.header--no-js .header__logo-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    gap: 30px;
+  }
+}
+
+.header--no-js .header__navigation-link {
+  text-align: center;
+}
+
+.header--no-js .header__tel-link {
+  margin-bottom: 20px;
+}
+
+.header--nav-open .header__nav-button {
+  height: 24px;
+  background-image: url("/__spritemap#sprite-life-tour-nav-close-view");
+}
+
+.header--nav-open .header__navigation {
+  display: block;
+}
+
+.header__wrapper {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 120px;
+  }
+}
+
+.header__nav-button {
+  border: none;
+  width: 26px;
+  height: 21px;
+  margin-top: 2px;
+  background-color: transparent;
+  background-image: url("/__spritemap#sprite-life-tour-nav-open-view");
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header__logo-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.header__logo-link {
+  display: block;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 32px;
+    margin-right: 31px;
+  }
+}
+
+.header__logo-image {
+  display: block;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 129px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    padding: 10px 0;
+  }
+}
+
+.header__navigation {
+  position: absolute;
+  display: none;
+  box-sizing: border-box;
+  width: 100%;
+  left: 0;
+  top: 99%;
+  min-height: fit-content;
+  background-color: $main-background;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: static;
+    height: fit-content;
+  }
+}
+
+.header__navigation-list {
+  @include list-style-none;
+
+  box-sizing: border-box;
+  width: 290px;
+  margin: 0 auto;
+  padding: 15px 0 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  letter-spacing: 0.4px;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    padding-top: 32px;
+    padding-bottom: 69px;
+    gap: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    letter-spacing: 0;
+    gap: 21px;
+  }
+}
+
+.header__navigation-link {
+  color: $text-white;
+  text-decoration: none;
+  font: $button-big-mobile;
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+
+  &:hover {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 1px;
+      width: 100%;
+      height: 1px;
+      background-color: $line-background;
+      left: 0;
+    }
+  }
+
+  &:focus-visible {
+    outline: 1px solid $line-background;
+  }
+
+  &:active {
+    color: $text-active;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font: $button-big-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $inputs-desktop;
+    text-transform: none;
+    padding: 5px;
+  }
+}
+
+.header__tel-link {
+  display: block;
+  min-width: fit-content;
+  text-align: end;
+  font: $h6-mobile;
+  text-decoration: none;
+  color: $text-white;
+
+  &:hover {
+    color: rgba($color: $text-white, $alpha: 0.5);
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: $text-primary;
+  }
+
+  &:active {
+    color: $text-active;
+  }
+
+  @media (min-width: $tablet-width) {
+    font: $h6-tablet;
+    margin-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $h6-desktop;
+    margin: 0;
+    padding: 23px 0 21px;
+  }
+}
+
+.header__tel-link--disabled {
+  color: $text-disabled;
+  pointer-events: none;
 }

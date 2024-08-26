@@ -18,45 +18,103 @@
     <link rel="preload" href="fonts/montserrat-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page-body">
-    <header class="page-body__header header">
+      <header class="page-body__header header header--no-js" data-test="header">
       <div class="header__wrapper main-wrapper">
-        <button class="header__nav-button"><span class="visually-hidden">Открыть или закрыть навигацию.</span></button>
-        <a class="header__logo-link" href="index.html" aria-current="page">
-          <img class="header__logo-image" src="img/life-tour-logo.svg" width="142" height="42" alt="Логотип Туристического агенства Lifetour.">
-        </a>
-        <nav class="header__navigation">
-          <ul class="header__navigation-list">
-            <li class="header__navigation-item">
-              <a class="header__navigation-link" href="#">Туры</a>
-            </li>
-            <li class="header__navigation-item">
-              <a class="header__navigation-link" href="#">Обучение</a>
-            </li>
-            <li class="header__navigation-item">
-              <a class="header__navigation-link" href="#">О нас</a>
-            </li>
-            <li class="header__navigation-item">
-              <a class="header__navigation-link" href="#">Отзывы</a>
-            </li>
-            <li class="header__navigation-item">
-              <a class="header__navigation-link" href="#">Фотографии</a>
-            </li>
-            <li class="header__navigation-item">
-              <a class="header__navigation-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <a class="header__tel-link" href="tel:+78000000000">8 800 000-00-00</a>
+        <button class="header__nav-button" type="button"><span class="visually-hidden">Открыть или закрыть навигацию.</span></button>
+        <div class="header__logo-container">
+          <a class="header__logo-link" href="index.html" aria-current="page">
+            <img class="header__logo-image" src="img/life-tour-logo.svg" width="142" height="42" alt="Логотип Туристического агенства Lifetour.">
+          </a>
+          <nav class="header__navigation">
+            <ul class="header__navigation-list">
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#">Туры</a>
+              </li>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#">Обучение</a>
+              </li>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#">О нас</a>
+              </li>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#">Отзывы</a>
+              </li>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#">Фотографии</a>
+              </li>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__tel-link" href="tel:+78000000000">8 800 000-00-00</a>
+        </div>
       </div>
     </header>
 
     <main class="page-body__main main">
-
+      <section class="main__hero hero" data-test="hero">
+        <div class="hero__wrapper main-wrapper">
+          <h1 class="visually-hidden">Наши прекрасные туры!</h1>
+          <div class="swiper swiper--hero">
+            <ul class="swiper-wrapper swiper-wrapper--hero">
+              <li class="swiper-slide swiper-slide--hero">
+                <div class="hero__slide-wrapper">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/hero-caucasus-desktop@1x.webp 1x, img/hero-caucasus-desktop@2x.webp 2x" width="1440" height="800">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/hero-caucasus-tablet@1x.webp 1x, img/hero-caucasus-tablet@2x.webp 2x" width="768" height="1034">
+                    <source type="image/webp" srcset="img/hero-caucasus-mobile@1x.webp 1x, img/hero-caucasus-mobile@2x.webp 2x" height="568" width="320">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/hero-caucasus-desktop@1x.jpg 1x, img/hero-caucasus-desktop@2x.jpg 2x" width="1440" height="800">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/hero-caucasus-tablet@1x.jpg 1x, img/hero-caucasus-tablet@2x.jpg 2x" width="768" height="1034">
+                    <img class="hero__slide-image" src="img/hero-caucasus-mobile@1x.jpg" srcset="img/hero-caucasus-mobile@2x.jpg 2x" height="568" width="320" alt="Туман на вершине Кавказских гор.">
+                  </picture>
+                  <h2 class="hero__slide-title">Захватывающие вершины Кавказа</h2>
+                  <p class="hero__slide-description">В&nbsp;сопровождении опытных гидов вы&nbsp;пройдёте через&nbsp;потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
+                  <a class="hero__slide-button" href="#">Смотреть тур</a>
+                </div>
+              </li>
+              <li class="swiper-slide swiper-slide--hero">
+                <div class="hero__slide-wrapper">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/hero-kamchatka-desktop@1x.webp 1x, img/hero-kamchatka-desktop@2x.webp 2x" width="1440" height="800">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/hero-kamchatka-tablet@1x.webp 1x, img/hero-kamchatka-tablet@2x.webp 2x" width="768" height="1034">
+                    <source type="image/webp" srcset="img/hero-kamchatka-mobile@1x.webp 1x, img/hero-kamchatka-mobile@2x.webp 2x" height="568" width="320">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/hero-kamchatka-desktop@1x.jpg 1x, img/hero-kamchatka-desktop@2x.jpg 2x" width="1440" height="800">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/hero-kamchatka-tablet@1x.jpg 1x, img/hero-kamchatka-tablet@2x.jpg 2x" width="768" height="1034">
+                    <img class="hero__slide-image" src="img/hero-kamchatka-mobile@1x.jpg" srcset="img/hero-kamchatka-mobile@2x.jpg 2x" height="568" width="320" alt="Туман на вершине Камчатских гор.">
+                  </picture>
+                  <h2 class="hero__slide-title">Невероятная природа Камчатки</h2>
+                  <p class="hero__slide-description">Незабываемое приключение, во&nbsp;время которого вы отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в мире.</p>
+                  <a class="hero__slide-button" href="#">Смотреть тур</a>
+                </div>
+              </li>
+              <li class="swiper-slide swiper-slide--hero">
+                <div class="hero__slide-wrapper">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/hero-altai-desktop@1x.webp 1x, img/hero-altai-desktop@2x.webp 2x" width="1440" height="800">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/hero-altai-tablet@1x.webp 1x, img/hero-altai-tablet@2x.webp 2x" width="768" height="1034">
+                    <source type="image/webp" srcset="img/hero-altai-mobile@1x.webp 1x, img/hero-altai-mobile@2x.webp 2x" height="568" width="320">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/hero-altai-desktop@1x.jpg 1x, img/hero-altai-desktop@2x.jpg 2x" width="1440" height="800">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/hero-altai-tablet@1x.jpg 1x, img/hero-altai-tablet@2x.jpg 2x" width="768" height="1034">
+                    <img class="hero__slide-image" src="img/hero-altai-mobile@1x.jpg" srcset="img/hero-altai-mobile@2x.jpg 2x" height="568" width="320" alt="Туман на вершине Кавказских гор.">
+                  </picture>
+                  <h2 class="hero__slide-title">Магические пейзажи Алтайского Края</h2>
+                  <p class="hero__slide-description">Алтайский трекинг-тур – это захватывающее приключение с посещением магических  и захватывающих дух ландшафтов Алтайских гор.</p>
+                  <a class="hero__slide-button" href="#">Смотреть тур</a>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-pagination swiper-pagination--hero"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-body__footer footer">
 
     </footer>
+
+    <script type="module" src="js/main.js"></script>
   </body>
 
 </html>
@@ -69,7 +127,7 @@
 
 
 <!-- примеры требуемых атрибутов data-test="*" -->
-<!-- <div data-test="header">header</div>
+<!--
 <div data-test="hero">hero</div>
 <div data-test="tours">tours</div>
 <div data-test="training">training</div>
@@ -79,4 +137,4 @@
 <div data-test="gallery">gallery</div>
 <div data-test="form">form</div>
 <div data-test="footer">footer</div>
-<script type="module" src="js/main.js"></script> -->
+ -->

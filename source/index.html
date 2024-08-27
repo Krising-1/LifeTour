@@ -54,10 +54,10 @@
 
     <main class="page-body__main main">
       <section class="main__hero hero" data-test="hero">
-        <div class="hero__wrapper main-wrapper">
+        <div class="hero__wrapper">
           <h1 class="visually-hidden">Наши прекрасные туры!</h1>
           <div class="swiper swiper--hero">
-            <ul class="swiper-wrapper swiper-wrapper--hero">
+            <div class="swiper-wrapper swiper-wrapper--hero">
               <li class="swiper-slide swiper-slide--hero">
                 <div class="hero__slide-wrapper">
                   <picture>
@@ -68,9 +68,15 @@
                     <source media="(min-width: 768px)" type="image/jpeg" srcset="img/hero-caucasus-tablet@1x.jpg 1x, img/hero-caucasus-tablet@2x.jpg 2x" width="768" height="1034">
                     <img class="hero__slide-image" src="img/hero-caucasus-mobile@1x.jpg" srcset="img/hero-caucasus-mobile@2x.jpg 2x" height="568" width="320" alt="Туман на вершине Кавказских гор.">
                   </picture>
-                  <h2 class="hero__slide-title">Захватывающие вершины Кавказа</h2>
-                  <p class="hero__slide-description">В&nbsp;сопровождении опытных гидов вы&nbsp;пройдёте через&nbsp;потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
-                  <a class="hero__slide-button" href="#">Смотреть тур</a>
+                  <div class="hero__content-wrapper">
+                    <h2>Захватывающие вершины Кавказа</h2>
+                    <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдёте через&nbsp;потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
+                    <a class="hero__slide-button" href="#">Смотреть тур</a>
+                    <div class="hero__slide-tour-description">
+                      <p class="hero__slide-duration">6 дней/5 ночей</p>
+                      <p class="hero__slide-difficulty">Высокая сложность</p>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="swiper-slide swiper-slide--hero">
@@ -81,11 +87,23 @@
                     <source type="image/webp" srcset="img/hero-kamchatka-mobile@1x.webp 1x, img/hero-kamchatka-mobile@2x.webp 2x" height="568" width="320">
                     <source media="(min-width:1440px)" type="image/jpeg" srcset="img/hero-kamchatka-desktop@1x.jpg 1x, img/hero-kamchatka-desktop@2x.jpg 2x" width="1440" height="800">
                     <source media="(min-width: 768px)" type="image/jpeg" srcset="img/hero-kamchatka-tablet@1x.jpg 1x, img/hero-kamchatka-tablet@2x.jpg 2x" width="768" height="1034">
-                    <img class="hero__slide-image" src="img/hero-kamchatka-mobile@1x.jpg" srcset="img/hero-kamchatka-mobile@2x.jpg 2x" height="568" width="320" alt="Туман на вершине Камчатских гор.">
+                    <img class="hero__slide-image" src="img/hero-kamchatka-mobile@1x.jpg" srcset="img/hero-kamchatka-mobile@2x.jpg 2x" height="568" width="320" alt="Туман на вершине Камчатских гор." loading="lazy">
                   </picture>
-                  <h2 class="hero__slide-title">Невероятная природа Камчатки</h2>
-                  <p class="hero__slide-description">Незабываемое приключение, во&nbsp;время которого вы отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в мире.</p>
-                  <a class="hero__slide-button" href="#">Смотреть тур</a>
+                  <div class="hero__content-wrapper">
+                    <h2>Невероятная природа Камчатки</h2>
+                    <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы&nbsp;в мире.</p>
+                    <a class="hero__slide-button" href="#">Смотреть тур</a>
+                    <picture>
+                      <source media="(min-width:1440px)" type="image/webp" srcset="img/hero-cards-desktop@1x.webp 1x, img/hero-cards-desktop@2x.webp 2x" width="410" height="459">
+                      <source type="image/webp" srcset="img/hero-cards-tablet@1x.webp 1x, img/hero-cards-tablet@2x.webp 2x" width="442" height="365">
+                      <source media="(min-width:1440px)" type="image/png" srcset="img/hero-cards-desktop@1x.png 1x, img/hero-cards-desktop@2x.png 2x" width="410" height="459">
+                      <img class="hero__slide-card-image" src="img/hero-cards-tablet@1x.png" srcset="img/hero-cards-tablet@2x.png 2x" width="442" height="365" alt="Фотокарточки с пейзажами на Камчатских горах." loading="lazy">
+                    </picture>
+                    <div class="hero__slide-tour-description">
+                      <p class="hero__slide-duration">9 дней/10 ночей</p>
+                      <p class="hero__slide-difficulty">Средняя сложность</p>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="swiper-slide swiper-slide--hero">
@@ -96,16 +114,64 @@
                     <source type="image/webp" srcset="img/hero-altai-mobile@1x.webp 1x, img/hero-altai-mobile@2x.webp 2x" height="568" width="320">
                     <source media="(min-width:1440px)" type="image/jpeg" srcset="img/hero-altai-desktop@1x.jpg 1x, img/hero-altai-desktop@2x.jpg 2x" width="1440" height="800">
                     <source media="(min-width: 768px)" type="image/jpeg" srcset="img/hero-altai-tablet@1x.jpg 1x, img/hero-altai-tablet@2x.jpg 2x" width="768" height="1034">
-                    <img class="hero__slide-image" src="img/hero-altai-mobile@1x.jpg" srcset="img/hero-altai-mobile@2x.jpg 2x" height="568" width="320" alt="Туман на вершине Кавказских гор.">
+                    <img class="hero__slide-image" src="img/hero-altai-mobile@1x.jpg" srcset="img/hero-altai-mobile@2x.jpg 2x" height="568" width="320" alt="Красоты Алтайского Края." loading="lazy">
                   </picture>
-                  <h2 class="hero__slide-title">Магические пейзажи Алтайского Края</h2>
-                  <p class="hero__slide-description">Алтайский трекинг-тур – это захватывающее приключение с посещением магических  и захватывающих дух ландшафтов Алтайских гор.</p>
+                  <h2>Магические пейзажи Алтайского Края</h2>
+                  <p>Алтайский трекинг-тур – это&nbsp;захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
                   <a class="hero__slide-button" href="#">Смотреть тур</a>
+                  <div class="hero__slide-tour-description">
+                    <p class="hero__slide-duration">8 дней/7 ночей</p>
+                    <p class="hero__slide-difficulty">Лёгкая сложность</p>
+                  </div>
+                </div>
+              </li>
+            </div>
+            <div class="swiper-pagination swiper-pagination--hero"></div>
+          </div>
+        </div>
+      </section>
+      <section class="main__tours tours" data-test="tours">
+        <div class="tours__wrapper main-wrapper">
+          <div class="tours__title-container">
+            <h2 class="tours__title">Ближайшие туры</h2>
+            <span class="tours__title" aria-hidden="true">Ближайшие туры</span>
+          </div>
+          <div class="swiper swiper--tours">
+            <ul class="swiper-wrapper swiper-wrapper--tours">
+              <li class="swiper-slide swiper-slide--tours">
+                <div class="tours__slide-wrapper">
+                  <picture>
+                    <img class="tours__slide-image">
+                  </picture>
+                  <div>
+                    <address class="tours__slide-address"><a class="tours__slide-address-link" href="https://maps.app.goo.gl/mHGFQdyg89PmUg149">Кавказ</a></address>
+                    <div class="tours__slide-time-container">
+                      <span class="tours__slide-days">4 дня</span>
+                      <span class="tours__slide-nights">3 ночи</span>
+                    </div>
+                  </div>
+                  <h3 class="tours__slide-title">Путешествие вокруг Эльбруса</h3>
+                  <ul class="tours__slide-list">
+                    <li class="tours__slide-item">
+                      <h4 class="tours__slide-item-title">Сложность:</h4>
+                      <p class="tours__slide-item-description"><span class="visually-hidden">Четыре из пяти звезд.</span></p>
+                    </li>
+                    <li class="tours__slide-item">
+                      <h4 class="tours__slide-item-title">Даты набора:</h4>
+                      <p class="tours__slide-item-description"><time datetime="2024-06-12">12.06</time>–<time datetime="2024-06-19">19.06</time></p>
+                    </li>
+                    <li class="tours__slide-item">
+                      <h4 class="tours__slide-item-title">Группа:</h4>
+                      <p class="tours__slide-item-description">до 15 чел.</p>
+                    </li>
+                  </ul>
                 </div>
               </li>
             </ul>
-            <div class="swiper-pagination swiper-pagination--hero"></div>
+            <button class="swiper-button-prev swiper-button-prev--tours"></button>
+            <button class="swiper-button-next swiper-button-next--tours"></button>
           </div>
+          <a class="tours__link" href="#">Показать все туры</a>
         </div>
       </section>
     </main>
@@ -128,8 +194,6 @@
 
 <!-- примеры требуемых атрибутов data-test="*" -->
 <!--
-<div data-test="hero">hero</div>
-<div data-test="tours">tours</div>
 <div data-test="training">training</div>
 <div data-test="about">about</div>
 <div data-test="reviews">reviews</div>

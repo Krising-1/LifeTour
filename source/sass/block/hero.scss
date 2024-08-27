@@ -1,3 +1,186 @@
-.hero__wrapper {
 
+.hero__slide-wrapper {
+  box-sizing: border-box;
+  min-height: 568px;
+  padding: 53px 15px 70px;
+  width: 320px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 1034px;
+    width: 768px;
+    padding: 45px 45px 105px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 800px;
+    width: 1440px;
+    padding: 80px 120px;
+    flex-grow: 1;
+  }
+}
+
+.hero__slide-wrapper h2 {
+  position: relative;
+  z-index: 3;
+  font: $h2-mobile;
+  color: $text-white;
+  text-align: center;
+  margin: 0 0 15px;
+
+  @media (min-width: $tablet-width) {
+    font: $h1-tablet;
+    margin: 0 0 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    max-width: 930px;
+    font: $h1-desktop;
+    margin-top: auto;
+    margin-bottom: 23px;
+  }
+}
+
+.hero__slide-wrapper p {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 61px;
+  margin-top: 0;
+  text-align: center;
+  font: $text-big-mobile;
+  color: $text-white;
+
+  @media (min-width: $tablet-width) {
+    font: $text-big-tablet;
+    max-width: 500px;
+    margin: 0 auto 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $text-big-desktop;
+    margin: 0 0 37px;
+    max-width: 470px;
+    text-align: start;
+  }
+}
+
+.hero__slide-image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-color: #6d92b8;
+}
+
+.hero__content-wrapper {
+  @media (min-width: $desktop-width) {
+    margin-top: auto;
+    position: relative;
+  }
+}
+
+.hero__slide-button {
+  position: relative;
+  z-index: 1;
+  display: block;
+  background-color: $main-background;
+  box-sizing: border-box;
+  width: fit-content;
+  min-width: 180px;
+  max-width: 220px;
+  margin: 0 auto;
+  text-align: center;
+  color: $text-white;
+  text-decoration: none;
+  font: $button-medium-mobile;
+  padding: 20px;
+
+  &:focus-visible {
+    background-color: $white-background;
+    outline: none;
+    color: $text-active;
+  }
+
+  &:hover {
+    background-color: $white-background;
+    outline: 1px solid $text-active;
+    color: $text-active;
+  }
+
+  &:active {
+    background-color: $text-active;
+    outline: none;
+    color: $text-white;
+  }
+
+  @media (min-width: $tablet-width) {
+    font: $button-medium-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $button-medium-desktop;
+    margin: 0 0 134px;
+  }
+}
+
+.hero__slide-button--disabled {
+  background-color: $text-disabled;
+  color: $text-white;
+  pointer-events: none;
+}
+
+.hero__slide-card-image {
+  position: relative;
+  z-index: 2;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0 auto;
+    margin-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: -64px;
+    top: -2px;
+  }
+}
+
+.hero__slide-tour-description {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.hero__slide-tour-description .hero__slide-duration,
+.hero__slide-tour-description .hero__slide-difficulty {
+  box-sizing: border-box;
+  padding: 13px 18px 13px 40px;
+  margin-bottom: 0;
+  width: fit-content;
+  background-color: transparent;
+  border: 1px solid rgba($color: $line-background, $alpha: 0.5);
+  font: $text-extra-small-desktop;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 19px 15px;
+}
+
+.hero__slide-duration {
+  background-image: url("/__spritemap#sprite-hero-duration-view");
+}
+
+.hero__slide-difficulty {
+  background-image: url("/__spritemap#sprite-hero-difficulty-view");
 }

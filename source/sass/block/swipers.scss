@@ -16,6 +16,13 @@
   height: auto;
 }
 
+.swiper-slide.swiper-slide--tours {
+  position: relative;
+  min-height: 416px;
+  box-sizing: border-box;
+  display: flex;
+}
+
 .swiper-pagination--hero.swiper-pagination-horizontal.swiper-pagination-bullets {
   gap: 20px;
   display: flex;
@@ -86,4 +93,82 @@
 
 .swiper-pagination--hero.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: $white-background;
+}
+
+.swiper-button-prev.swiper-button-prev--tours,
+.swiper-button-next.swiper-button-next--tours,
+.swiper-button-next.swiper-button-next--training,
+.swiper-button-prev.swiper-button-prev--training {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    box-sizing: border-box;
+    width: 37px;
+    height: 35px;
+    border: none;
+    background-color: $button-primary;
+
+
+    &::after {
+      content: "";
+      width: 14px;
+      height: 10px;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      mask-image: url("/__spritemap#sprite-life-tour-swiper-button-view");
+      background-color: $line-background;
+    }
+
+    &:hover {
+      background-color: $white-background;
+      border: 1px solid $text-active;
+
+      &::after {
+        background-color: $text-active;
+      }
+    }
+
+    &:focus-visible {
+      background-color: $white-background;
+      outline: none;
+
+      &::after {
+        background-color: $text-active;
+      }
+    }
+
+    &:active {
+      background-color: $text-active;
+
+      &::after {
+        background-color: $line-background;
+      }
+    }
+  }
+}
+
+.swiper-button-prev.swiper-button-prev--tours.swiper-button-disabled,
+.swiper-button-next.swiper-button-next--tours.swiper-button-disabled,
+.swiper-button-prev.swiper-button-prev--training.swiper-button-disabled,
+.swiper-button-next.swiper-button-next--training.swiper-button-disabled {
+  background-color: $text-disabled;
+  opacity: 1;
+}
+
+.swiper-button-prev.swiper-button-prev--tours,
+.swiper-button-prev.swiper-button-prev--training {
+  left: -39px;
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+
+.swiper-button-next.swiper-button-next--tours,
+.swiper-button-next.swiper-button-next--training {
+  right: -39px;
 }

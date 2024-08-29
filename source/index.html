@@ -134,27 +134,36 @@
         <div class="tours__wrapper main-wrapper">
           <div class="tours__title-container">
             <h2 class="tours__title">Ближайшие туры</h2>
-            <span class="tours__title" aria-hidden="true">Ближайшие туры</span>
+            <span class="tours__title-duplicate" aria-hidden="true">Ближайшие туры</span>
+          </div>
+          <div class="tours__button-nav-wrapper">
+            <button class="swiper-button-prev swiper-button-prev--tours" type="button"><class class="visually-hidden">Предыдущий слайд.</class></button>
+            <button class="swiper-button-next swiper-button-next--tours" type="button"><class class="visually-hidden">Следующий слайд.</class></button>
           </div>
           <div class="swiper swiper--tours">
             <ul class="swiper-wrapper swiper-wrapper--tours">
               <li class="swiper-slide swiper-slide--tours">
                 <div class="tours__slide-wrapper">
                   <picture>
-                    <img class="tours__slide-image">
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/tours-elbrus-desktop@1x.webp 1x, img/tours-elbrus-desktop@2x.webp 2x" width="380" height="416">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/tours-elbrus-tablet@1x.webp 1x, img/tours-elbrus-tablet@2x.webp 2x" width="330" height="416">
+                    <source type="image/webp" srcset="img/tours-elbrus-mobile@1x.webp 1x, img/tours-elbrus-mobile@2x.webp 2x" height="416" width="290">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/tours-elbrus-desktop@1x.jpg 1x, img/tours-elbrus-desktop@2x.jpg 2x" width="380" height="416">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/tours-elbrus-tablet@1x.jpg 1x, img/tours-elbrus-tablet@2x.jpg 2x" width="330" height="416">
+                    <img class="tours__slide-image" src="img/tours-elbrus-mobile@1x.jpg" srcset="img/tours-elbrus-mobile@2x.jpg 2x" height="416" width="290" alt="Красоты Эльбруса." loading="lazy">
                   </picture>
-                  <div>
+                  <div class="tours__time-slide-duration-container">
                     <address class="tours__slide-address"><a class="tours__slide-address-link" href="https://maps.app.goo.gl/mHGFQdyg89PmUg149">Кавказ</a></address>
                     <div class="tours__slide-time-container">
                       <span class="tours__slide-days">4 дня</span>
                       <span class="tours__slide-nights">3 ночи</span>
                     </div>
                   </div>
-                  <h3 class="tours__slide-title">Путешествие вокруг Эльбруса</h3>
+                  <h3 class="tours__slide-title">Путешествие вокруг&nbsp;Эльбруса</h3>
                   <ul class="tours__slide-list">
                     <li class="tours__slide-item">
                       <h4 class="tours__slide-item-title">Сложность:</h4>
-                      <p class="tours__slide-item-description"><span class="visually-hidden">Четыре из пяти звезд.</span></p>
+                      <p class="tours__slide-item-description tours__slide-item-description--stars tours__slide-item-description--stars-elbrus"><span class="visually-hidden">Четыре из пяти звезд.</span></p>
                     </li>
                     <li class="tours__slide-item">
                       <h4 class="tours__slide-item-title">Даты набора:</h4>
@@ -167,11 +176,239 @@
                   </ul>
                 </div>
               </li>
+              <li class="swiper-slide swiper-slide--tours">
+                <div class="tours__slide-wrapper">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/tours-belukha-desktop@1x.webp 1x, img/tours-belukha-desktop@2x.webp 2x" width="380" height="416">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/tours-belukha-tablet@1x.webp 1x, img/tours-belukha-tablet@2x.webp 2x" width="330" height="416">
+                    <source type="image/webp" srcset="img/tours-belukha-mobile@1x.webp 1x, img/tours-belukha-mobile@2x.webp 2x" height="416" width="290">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/tours-belukha-desktop@1x.jpg 1x, img/tours-belukha-desktop@2x.jpg 2x" width="380" height="416">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/tours-belukha-tablet@1x.jpg 1x, img/tours-belukha-tablet@2x.jpg 2x" width="330" height="416">
+                    <img class="tours__slide-image" src="img/tours-belukha-mobile@1x.jpg" srcset="img/tours-belukha-mobile@2x.jpg 2x" height="416" width="290" alt="Красоты подножия Белухи." loading="lazy">
+                  </picture>
+                  <div class="tours__time-slide-duration-container">
+                    <address class="tours__slide-address"><a class="tours__slide-address-link" href="https://maps.app.goo.gl/utjGS9GLdptWdp3G7">Алтай</a></address>
+                    <div class="tours__slide-time-container">
+                      <span class="tours__slide-days">14 дней</span>
+                      <span class="tours__slide-nights">13 ночей</span>
+                    </div>
+                  </div>
+                  <h3 class="tours__slide-title">Путь к&nbsp;подножию Белухи</h3>
+                  <ul class="tours__slide-list">
+                    <li class="tours__slide-item">
+                      <h4 class="tours__slide-item-title">Сложность:</h4>
+                      <p class="tours__slide-item-description tours__slide-item-description--stars tours__slide-item-description--stars-belukha"><span class="visually-hidden">Три из пяти звезд.</span></p>
+                    </li>
+                    <li class="tours__slide-item">
+                      <h4 class="tours__slide-item-title">Даты набора:</h4>
+                      <p class="tours__slide-item-description"><time datetime="2024-06-14">14.06</time>–<time datetime="2024-06-23">23.06</time></p>
+                    </li>
+                    <li class="tours__slide-item">
+                      <h4 class="tours__slide-item-title">Группа:</h4>
+                      <p class="tours__slide-item-description">до 25 чел.</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="swiper-slide swiper-slide--tours">
+                <div class="tours__slide-wrapper">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/tours-fisht-desktop@1x.webp 1x, img/tours-fisht-desktop@2x.webp 2x" width="380" height="416">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/tours-fisht-tablet@1x.webp 1x, img/tours-fisht-tablet@2x.webp 2x" width="330" height="416">
+                    <source type="image/webp" srcset="img/tours-fisht-mobile@1x.webp 1x, img/tours-fisht-mobile@2x.webp 2x" height="416" width="290">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/tours-fisht-desktop@1x.jpg 1x, img/tours-fisht-desktop@2x.jpg 2x" width="380" height="416">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/tours-fisht-tablet@1x.jpg 1x, img/tours-fisht-tablet@2x.jpg 2x" width="330" height="416">
+                    <img class="tours__slide-image" src="img/tours-fisht-mobile@1x.jpg" srcset="img/tours-fisht-mobile@2x.jpg 2x" height="416" width="290" alt="Красоты Эльбруса." loading="lazy">
+                  </picture>
+                  <div class="tours__time-slide-duration-container">
+                    <address class="tours__slide-address"><a class="tours__slide-address-link" href="https://maps.app.goo.gl/wbpU36MLMhMWb83MA">Адыгея</a></address>
+                    <div class="tours__slide-time-container">
+                      <span class="tours__slide-days">7 дней</span>
+                      <span class="tours__slide-nights">6 ночей</span>
+                    </div>
+                  </div>
+                  <h3 class="tours__slide-title">Через&nbsp;Фишт к&nbsp;Чёрному морю и&nbsp;обратно</h3>
+                  <ul class="tours__slide-list">
+                    <li class="tours__slide-item">
+                      <h4 class="tours__slide-item-title">Сложность:</h4>
+                      <p class="tours__slide-item-description tours__slide-item-description--stars tours__slide-item-description--stars-fisht"><span class="visually-hidden">Четыре из пяти звезд.</span></p>
+                    </li>
+                    <li class="tours__slide-item">
+                      <h4 class="tours__slide-item-title">Даты набора:</h4>
+                      <p class="tours__slide-item-description"><time datetime="2024-07-15">15.07</time>–<time datetime="2024-07-19">19.07</time></p>
+                    </li>
+                    <li class="tours__slide-item">
+                      <h4 class="tours__slide-item-title">Группа:</h4>
+                      <p class="tours__slide-item-description">до 22 чел.</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="swiper-slide swiper-slide--tours">
+                <div class="tours__slide-wrapper">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/tours-manaraga-desktop@1x.webp 1x, img/tours-manaraga-desktop@2x.webp 2x" width="380" height="416">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/tours-manaraga-tablet@1x.webp 1x, img/tours-manaraga-tablet@2x.webp 2x" width="330" height="416">
+                    <source type="image/webp" srcset="img/tours-manaraga-mobile@1x.webp 1x, img/tours-manaraga-mobile@2x.webp 2x" height="416" width="290">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/tours-manaraga-desktop@1x.jpg 1x, img/tours-manaraga-desktop@2x.jpg 2x" width="380" height="416">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/tours-manaraga-tablet@1x.jpg 1x, img/tours-manaraga-tablet@2x.jpg 2x" width="330" height="416">
+                    <img class="tours__slide-image" src="img/tours-manaraga-mobile@1x.jpg" srcset="img/tours-manaraga-mobile@2x.jpg 2x" height="416" width="290" alt="Красоты Эльбруса." loading="lazy">
+                  </picture>
+                  <div class="tours__time-slide-duration-container">
+                    <address class="tours__slide-address"><a class="tours__slide-address-link" href="https://maps.app.goo.gl/DxhETHfWi4QZ8xK69">Урал</a></address>
+                    <div class="tours__slide-time-container">
+                      <span class="tours__slide-days">9 дней</span>
+                      <span class="tours__slide-nights">10 ночей</span>
+                    </div>
+                  </div>
+                  <h3 class="tours__slide-title">Восхождение Манарага</h3>
+                  <ul class="tours__slide-list">
+                    <li class="tours__slide-item">
+                      <h4 class="tours__slide-item-title">Сложность:</h4>
+                      <p class="tours__slide-item-description tours__slide-item-description--stars tours__slide-item-description--stars-manaraga"><span class="visually-hidden">Пять из пяти звезд.</span></p>
+                    </li>
+                    <li class="tours__slide-item">
+                      <h4 class="tours__slide-item-title">Даты набора:</h4>
+                      <p class="tours__slide-item-description"><time datetime="2024-07-12">12.07</time>–<time datetime="2024-07-19">19.07</time></p>
+                    </li>
+                    <li class="tours__slide-item">
+                      <h4 class="tours__slide-item-title">Группа:</h4>
+                      <p class="tours__slide-item-description">до 7 чел.</p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </ul>
-            <button class="swiper-button-prev swiper-button-prev--tours"></button>
-            <button class="swiper-button-next swiper-button-next--tours"></button>
           </div>
           <a class="tours__link" href="#">Показать все туры</a>
+        </div>
+      </section>
+      <section class="main__training training" data-test="training">
+        <div class="training__wrapper main-wrapper">
+          <div class="training__title-container">
+            <h2 class="training__title">Обучение</h2>
+            <span class="training__title-duplicate" aria-hidden="true">Обучение</span>
+          </div>
+          <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
+          <div class="training__button-nav-wrapper">
+            <button class="swiper-button-prev swiper-button-prev--training" type="button"><class class="visually-hidden">Предыдущий слайд.</class></button>
+            <button class="swiper-button-next swiper-button-next--training" type="button"><class class="visually-hidden">Следующий слайд.</class></button>
+          </div>
+          <h3 class="training__swiper-title">Наши инструкторы</h3>
+          <div class="swiper swiper--training">
+            <ul class="swiper-wrapper swiper-wrapper--training">
+              <li class="swiper-slide swiper-slide--training">
+                <div class="training__slide-wrapper">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/training-prokofev-desktop@1x.webp 1x, img/training-prokofev-desktop@2x.webp 2x" width="255" height="200">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/training-prokofev-tablet@1x.webp 1x, img/training-prokofev-tablet@2x.webp 2x" width="183" height="200">
+                    <source type="image/webp" srcset="img/training-prokofev-mobile@1x.webp 1x, img/training-prokofev-mobile@2x.webp 2x" width="260" height="200">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/training-prokofev-desktop@1x.jpg 1x, img/training-prokofev-desktop@2x.jpg 2x" width="255" height="200">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/training-prokofev-tablet@1x.jpg 1x, img/training-prokofev-tablet@2x.jpg 2x" width="183" height="200">
+                    <img class="training__slide-image" src="img/training-prokofev-mobile@1x.jpg" srcset="img/training-prokofev-mobile@2x.jpg 2x" width="260" height="200" alt="Мужчина с красным большим рюкзаком улыбается на фоне подъема на гору." loading="lazy">
+                  </picture>
+                  <div class="training__slide-container">
+                    <h3>Александр Прокофьев</h3>
+                    <a class="training__slide-link" href="#">
+                      <span class="visually-hidden">Vkontakte.</span>
+                      <svg class="page-footer__social-image" aria-hidden="true" focusable="false" width="14" height="8">
+                        <use href="/__spritemap#sprite-life-tour-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p>Строгий и&nbsp;внимательный инструктор, весёлый и&nbsp;общительный человек. Любит природу.</p>
+                </div>
+              </li>
+              <li class="swiper-slide swiper-slide--training">
+                <div class="training__slide-wrapper">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/training-afinogenova-desktop@1x.webp 1x, img/training-afinogenova-desktop@2x.webp 2x" width="255" height="200">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/training-afinogenova-tablet@1x.webp 1x, img/training-afinogenova-tablet@2x.webp 2x" width="183" height="200">
+                    <source type="image/webp" srcset="img/training-afinogenova-mobile@1x.webp 1x, img/training-afinogenova-mobile@2x.webp 2x" width="260" height="200">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/training-afinogenova-desktop@1x.jpg 1x, img/training-afinogenova-desktop@2x.jpg 2x" width="255" height="200">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/training-afinogenova-tablet@1x.jpg 1x, img/training-afinogenova-tablet@2x.jpg 2x" width="183" height="200">
+                    <img class="training__slide-image" src="img/training-afinogenova-mobile@1x.jpg" srcset="img/training-afinogenova-mobile@2x.jpg 2x" width="260" height="200" alt="Мужчина с красным большим рюкзаком улыбается на фоне подъема на гору." loading="lazy">
+                  </picture>
+                  <div class="training__slide-container">
+                    <h3>Светлана Афиногенова</h3>
+                    <a class="training__slide-link" href="#">
+                      <span class="visually-hidden">Vkontakte.</span>
+                      <svg class="page-footer__social-image" aria-hidden="true" focusable="false" width="14" height="8">
+                        <use href="/__spritemap#sprite-life-tour-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p>Видеть мир&nbsp;вокруг, познавать его&nbsp;опасности, находить друг друга, становиться ближе, чувствовать — в&nbsp;этом назначение жизни.</p>
+                </div>
+              </li>
+              <li class="swiper-slide swiper-slide--training">
+                <div class="training__slide-wrapper">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/training-kolesnichenko-desktop@1x.webp 1x, img/training-kolesnichenko-desktop@2x.webp 2x" width="255" height="200">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/training-kolesnichenko-tablet@1x.webp 1x, img/training-kolesnichenko-tablet@2x.webp 2x" width="183" height="200">
+                    <source type="image/webp" srcset="img/training-kolesnichenko-mobile@1x.webp 1x, img/training-kolesnichenko-mobile@2x.webp 2x" width="260" height="200">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/training-kolesnichenko-desktop@1x.jpg 1x, img/training-kolesnichenko-desktop@2x.jpg 2x" width="255" height="200">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/training-kolesnichenko-tablet@1x.jpg 1x, img/training-kolesnichenko-tablet@2x.jpg 2x" width="183" height="200">
+                    <img class="training__slide-image" src="img/training-kolesnichenko-mobile@1x.jpg" srcset="img/training-kolesnichenko-mobile@2x.jpg 2x" width="260" height="200" alt="Мужчина с красным большим рюкзаком улыбается на фоне подъема на гору." loading="lazy">
+                  </picture>
+                  <div class="training__slide-container">
+                    <h3>Надежда Колесниченко</h3>
+                    <a class="training__slide-link" href="#">
+                      <span class="visually-hidden">Vkontakte.</span>
+                      <svg class="page-footer__social-image" aria-hidden="true" focusable="false" width="14" height="8">
+                        <use href="/__spritemap#sprite-life-tour-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p>Участники говорят, что&nbsp;Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней&nbsp;чувствуешь себя спокойно и&nbsp;уверенно.</p>
+                </div>
+              </li>
+              <li class="swiper-slide swiper-slide--training">
+                <div class="training__slide-wrapper">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/training-kajgorodov-desktop@1x.webp 1x, img/training-kajgorodov-desktop@2x.webp 2x" width="255" height="200">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/training-kajgorodov-tablet@1x.webp 1x, img/training-kajgorodov-tablet@2x.webp 2x" width="183" height="200">
+                    <source type="image/webp" srcset="img/training-kajgorodov-mobile@1x.webp 1x, img/training-kajgorodov-mobile@2x.webp 2x" width="260" height="200">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/training-kajgorodov-desktop@1x.jpg 1x, img/training-kajgorodov-desktop@2x.jpg 2x" width="255" height="200">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/training-kajgorodov-tablet@1x.jpg 1x, img/training-kajgorodov-tablet@2x.jpg 2x" width="183" height="200">
+                    <img class="training__slide-image" src="img/training-kajgorodov-mobile@1x.jpg" srcset="img/training-kajgorodov-mobile@2x.jpg 2x" width="260" height="200" alt="Мужчина с красным большим рюкзаком улыбается на фоне подъема на гору." loading="lazy">
+                  </picture>
+                  <div class="training__slide-container">
+                    <h3>Федор Кайгородов</h3>
+                    <a class="training__slide-link" href="#">
+                      <span class="visually-hidden">Vkontakte.</span>
+                      <svg class="page-footer__social-image" aria-hidden="true" focusable="false" width="14" height="8">
+                        <use href="/__spritemap#sprite-life-tour-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p>Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России побывал в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp;Европе.</p>
+                </div>
+              </li>
+              <li class="swiper-slide swiper-slide--training">
+                <div class="training__slide-wrapper">
+                  <picture>
+                    <source media="(min-width:1440px)" type="image/webp" srcset="img/training-vasnecov-desktop@1x.webp 1x, img/training-vasnecov-desktop@2x.webp 2x" width="255" height="200">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/training-vasnecov-tablet@1x.webp 1x, img/training-vasnecov-tablet@2x.webp 2x" width="183" height="200">
+                    <source type="image/webp" srcset="img/training-vasnecov-mobile@1x.webp 1x, img/training-vasnecov-mobile@2x.webp 2x" width="260" height="200">
+                    <source media="(min-width:1440px)" type="image/jpeg" srcset="img/training-vasnecov-desktop@1x.jpg 1x, img/training-vasnecov-desktop@2x.jpg 2x" width="255" height="200">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="img/training-vasnecov-tablet@1x.jpg 1x, img/training-vasnecov-tablet@2x.jpg 2x" width="183" height="200">
+                    <img class="training__slide-image" src="img/training-vasnecov-mobile@1x.jpg" srcset="img/training-vasnecov-mobile@2x.jpg 2x" width="260" height="200" alt="Мужчина с красным большим рюкзаком улыбается на фоне подъема на гору." loading="lazy">
+                  </picture>
+                  <div class="training__slide-container">
+                    <h3>Даниэль Васнецов</h3>
+                    <a class="training__slide-link" href="#">
+                      <span class="visually-hidden">Vkontakte.</span>
+                      <svg class="page-footer__social-image" aria-hidden="true" focusable="false" width="14" height="8">
+                        <use href="/__spritemap#sprite-life-tour-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
@@ -194,7 +431,6 @@
 
 <!-- примеры требуемых атрибутов data-test="*" -->
 <!--
-<div data-test="training">training</div>
 <div data-test="about">about</div>
 <div data-test="reviews">reviews</div>
 <div data-test="adv">adv</div>

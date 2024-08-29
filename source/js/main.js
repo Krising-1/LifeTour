@@ -4,7 +4,9 @@
 // import 'swiper/css';
 
 import { addSwitcherBurger } from './nav-switcher.js';
-import { initHeroSwiper } from './swipers.js';
+import { initHeroSwiper, initToursSwiper, initTrainingSwiper } from './swipers.js';
 
 addSwitcherBurger();
 initHeroSwiper();
+initToursSwiper();
+initTrainingSwiper();

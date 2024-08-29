@@ -1,0 +1,346 @@
+.tours__wrapper {
+  padding: 22px 15px 20px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 44px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 107px 120px;
+  }
+}
+
+.tours__slide-wrapper {
+  box-sizing: border-box;
+  padding: 10px 20px 30px;
+  height: 100%;
+  width: 290px;
+
+  @media (min-width: $tablet-width) {
+    width: 330px;
+    padding: 30px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 380px;
+  }
+}
+
+.swiper-slide--tours {
+  display: flex;
+  align-items: end;
+}
+
+.tours__title-container {
+  position: relative;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.tours__title {
+  font: $h3-mobile;
+  padding-top: 16px;
+  padding-bottom: 18px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font: $h3-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $h3-desktop;
+  }
+}
+
+.tours__title-duplicate {
+  position: absolute;
+  font: $h2-mobile;
+  opacity: 0.03;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    font: $h2-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $h2-desktop;
+  }
+}
+
+.tours__slide-image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tours__time-slide-duration-container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.tours__slide-address {
+  position: relative;
+  z-index: 2;
+  font-style: normal;
+  background-color: $text-secondary;
+}
+
+.tours__slide-address-link {
+  color: $text-white;
+  font: $captions-medium-mobile;
+  text-decoration: none;
+  padding: 8px 12px 8px 34px;
+  width: fit-content;
+  display: block;
+  background-size: 9px 12px;
+  background-image: url("/__spritemap#sprite-tours-address-pin-view");
+  background-repeat: no-repeat;
+  background-position: 16px 8px;
+}
+
+.tours__slide-time-container {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.tours__slide-days,
+.tours__slide-nights {
+  padding: 3px 0 5px 32px;
+  font: $captions-medium-mobile;
+  color: $text-white;
+  background-size: 20px 19px;
+  background-repeat: no-repeat;
+}
+
+.tours__slide-days {
+  background-image: url("/__spritemap#sprite-tours-slide-days-view");
+}
+
+.tours__slide-nights {
+  background-size: 20px 17px;
+  background-image: url("/__spritemap#sprite-tours-slide-nights-view");
+}
+
+.tours__slide-title {
+  position: relative;
+  z-index: 2;
+  font: $h4-tablet;
+  color: $text-white;
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 280px;
+  }
+}
+
+.tours__slide-item {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tours__slide-list {
+  @include list-style-none;
+
+  display: flex;
+  color: $text-white;
+  gap: 7px;
+  padding-top: 15px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 80px;
+    background-color: rgba($color: $line-background, $alpha: 0.2);
+    top: -2px;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 52px;
+  }
+}
+
+.tours__slide-item-title {
+  font: $captions-small-mobile;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.tours__slide-item-description {
+  margin: 0;
+  font: $captions-big-tablet;
+}
+
+.tours__slide-item-description--stars {
+  min-width: 84px;
+  display: flex;
+  margin-bottom: 1px;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 14px;
+    background-size: 17px 14px;
+    background-image: url("/__spritemap#sprite-tours-star-shaded-view");
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    height: 14px;
+    margin-left: 1px;
+    background-size: 17px 14px;
+    background-image: url("/__spritemap#sprite-tours-star-unshaded-view");
+  }
+}
+
+.tours__slide-item-description--stars-elbrus {
+  margin-right: 2px;
+
+  &::before {
+    width: 67px;
+  }
+
+  &::after {
+    width: 16px;
+  }
+}
+
+.tours__slide-item-description--stars-belukha {
+  &::before {
+    width: 50px;
+  }
+
+  &::after {
+    width: 33px;
+  }
+}
+
+.tours__slide-item-description--stars-fisht {
+  &::before {
+    width: 67px;
+  }
+
+  &::after {
+    width: 16px;
+  }
+}
+
+.tours__slide-item-description--stars-manaraga {
+  &::before {
+    width: 83px;
+  }
+
+  &::after {
+    width: 0;
+  }
+}
+
+.tours__link {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: $button-big-mobile;
+  color: $text-primary;
+  box-sizing: border-box;
+  width: fit-content;
+  max-width: 250px;
+  padding: 10px;
+  margin: 25px auto 0;
+  letter-spacing: 0.6px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 14px;
+    margin-left: 10px;
+    mask-image: url("/__spritemap#sprite-tours-link-arrow-view");
+    mask-repeat: no-repeat;
+    background-color: $icon-primary;
+    mask-position: right;
+  }
+
+  &:hover {
+    color: rgba($color: $text-secondary, $alpha: 0.2);
+
+    &::after {
+      background-color: rgba($color: $text-secondary, $alpha: 0.2);
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: $text-secondary;
+
+    &::after {
+      background-color: $text-secondary;
+    }
+  }
+
+  &:active {
+    color: $text-active;
+
+    &::after {
+      background-color: $text-active;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font: $button-big-tablet;
+    margin-top: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font: $button-big-desktop;
+    margin-top: 53px;
+  }
+}
+
+.tours__link--disabled {
+  color: $text-disabled;
+  pointer-events: none;
+
+  &::after {
+    background-color: $text-disabled;
+  }
+}
+
+.tours__button-nav-wrapper {
+  position: absolute;
+  top: 82px;
+  right: 84px;
+
+  @media (min-width: $desktop-width) {
+    top: 142px;
+    right: 159px;
+  }
+}

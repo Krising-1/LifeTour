@@ -98,7 +98,9 @@
 .swiper-button-prev.swiper-button-prev--tours,
 .swiper-button-next.swiper-button-next--tours,
 .swiper-button-next.swiper-button-next--training,
-.swiper-button-prev.swiper-button-prev--training {
+.swiper-button-prev.swiper-button-prev--training,
+.swiper-button-next.swiper-button-next--reviews,
+.swiper-button-prev.swiper-button-prev--reviews {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -154,7 +156,9 @@
 .swiper-button-prev.swiper-button-prev--tours.swiper-button-disabled,
 .swiper-button-next.swiper-button-next--tours.swiper-button-disabled,
 .swiper-button-prev.swiper-button-prev--training.swiper-button-disabled,
-.swiper-button-next.swiper-button-next--training.swiper-button-disabled {
+.swiper-button-next.swiper-button-next--training.swiper-button-disabled,
+.swiper-button-prev.swiper-button-prev--reviews.swiper-button-disabled,
+.swiper-button-next.swiper-button-next--reviews.swiper-button-disabled {
   background-color: $text-disabled;
   opacity: 1;
 }
@@ -171,4 +175,30 @@
 .swiper-button-next.swiper-button-next--tours,
 .swiper-button-next.swiper-button-next--training {
   right: -39px;
+}
+
+.swiper-slide.swiper-slide--training {
+  height: auto;
+}
+
+.swiper-wrapper--training {
+  margin-bottom: 27px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
+  }
+}
+
+.swiper-slide--reviews {
+  box-sizing: border-box;
+  width: 290px;
+  padding: 21px 20px;
+  background-color: $white-background;
+  box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
+
+  height: auto;
+}
+
+.swiper-wrapper--reviews {
+  padding-top: 13px;
 }

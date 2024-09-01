@@ -4,10 +4,13 @@
 // import 'swiper/css';
 
 import { addSwitcherBurger } from './nav-switcher.js';
-import { initHeroSwiper, initToursSwiper, initTrainingSwiper, initReviewsSwiper } from './swipers.js';
+import { initHeroSwiper, initToursSwiper, initTrainingSwiper, initReviewsSwiper, initAdvantagesSwiper, initGallerySwiper } from './swipers.js';
+
 
 addSwitcherBurger();
 initHeroSwiper();
 initToursSwiper();
 initTrainingSwiper();
 initReviewsSwiper();
+initAdvantagesSwiper();
+initGallerySwiper();

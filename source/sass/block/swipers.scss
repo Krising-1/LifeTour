@@ -100,7 +100,11 @@
 .swiper-button-next.swiper-button-next--training,
 .swiper-button-prev.swiper-button-prev--training,
 .swiper-button-next.swiper-button-next--reviews,
-.swiper-button-prev.swiper-button-prev--reviews {
+.swiper-button-prev.swiper-button-prev--reviews,
+.swiper-button-next.swiper-button-next--advantages,
+.swiper-button-prev.swiper-button-prev--advantages,
+.swiper-button-next.swiper-button-next--gallery,
+.swiper-button-prev.swiper-button-prev--gallery {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -158,13 +162,20 @@
 .swiper-button-prev.swiper-button-prev--training.swiper-button-disabled,
 .swiper-button-next.swiper-button-next--training.swiper-button-disabled,
 .swiper-button-prev.swiper-button-prev--reviews.swiper-button-disabled,
-.swiper-button-next.swiper-button-next--reviews.swiper-button-disabled {
+.swiper-button-next.swiper-button-next--reviews.swiper-button-disabled,
+.swiper-button-prev.swiper-button-prev--advantages.swiper-button-disabled,
+.swiper-button-next.swiper-button-next--advantages.swiper-button-disabled,
+.swiper-button-prev.swiper-button-prev--gallery.swiper-button-disabled,
+.swiper-button-next.swiper-button-next--gallery.swiper-button-disabled {
   background-color: $text-disabled;
   opacity: 1;
 }
 
 .swiper-button-prev.swiper-button-prev--tours,
-.swiper-button-prev.swiper-button-prev--training {
+.swiper-button-prev.swiper-button-prev--training,
+.swiper-button-prev.swiper-button-prev--reviews,
+.swiper-button-prev.swiper-button-prev--advantages,
+.swiper-button-prev.swiper-button-prev--gallery {
   left: -39px;
 
   &::after {
@@ -173,7 +184,10 @@
 }
 
 .swiper-button-next.swiper-button-next--tours,
-.swiper-button-next.swiper-button-next--training {
+.swiper-button-next.swiper-button-next--training,
+.swiper-button-next.swiper-button-next--reviews,
+.swiper-button-next.swiper-button-next--advantages,
+.swiper-button-next.swiper-button-next--gallery {
   right: -39px;
 }
 
@@ -189,7 +203,7 @@
   }
 }
 
-.swiper-slide--reviews {
+.swiper-slide.swiper-slide--reviews {
   box-sizing: border-box;
   width: 290px;
   padding: 21px 20px;
@@ -197,8 +211,57 @@
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
 
   height: auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .swiper-wrapper--reviews {
-  padding-top: 13px;
+  padding: 13px 15px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 0 40px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 0 200px 130px;
+  }
+}
+
+.swiper-slide.swiper-slide--advantages {
+  height: auto;
+  width: 380px;
+}
+
+.swiper-slide.advantages__slide--duplicate {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.swiper-slide--gallery.swiper-slide--double {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    gap: 7px;
+    position: relative;
+  }
+}
+
+.swiper-slide--gallery.swiper-slide--double:nth-last-of-type(2) {
+  @media (min-width: $desktop-width) {
+    right: 1px;
+  }
+}
+
+.swiper-slide--gallery.swiper-slide--single {
+  @media (min-width: $desktop-width) {
+    right: 1px;
+  }
 }
